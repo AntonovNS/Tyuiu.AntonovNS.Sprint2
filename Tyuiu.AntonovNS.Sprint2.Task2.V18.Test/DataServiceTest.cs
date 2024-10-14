@@ -9,7 +9,7 @@ namespace Tyuiu.AntonovNS.Sprint2.Task2.V18.Test
         public void ValidCheckDotInShadedArea()
         {
             DataService ds = new DataService();
-            int x = 4, y = 5;
+            int x = 9, y = 6;
             bool res = ds.CheckDotInShadedArea(x, y);
             bool wait = true;
             Assert.AreEqual(wait, res);
