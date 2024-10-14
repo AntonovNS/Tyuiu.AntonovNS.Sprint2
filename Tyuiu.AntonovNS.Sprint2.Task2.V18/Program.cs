@@ -1,5 +1,5 @@
-﻿using Tyuiu.AntonovNS.Sprint2.Task1.V27.Lib;
-namespace Tyuiu.AntonovNS.Sprint2.Task1.V27
+﻿using Tyuiu.AntonovNS.Sprint2.Task2.V18.Lib;
+namespace Tyuiu.AntonovNS.Sprint2.Task2.V18
 {
     internal class Program
     {
@@ -10,36 +10,36 @@ namespace Tyuiu.AntonovNS.Sprint2.Task1.V27
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("#* Спринт #2                                                              *");
             Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #27                                                             *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #18                                                             *");
             Console.WriteLine("* Выполнил: Антонов Никита Сергеевич |  ИСТНб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Условие:                                                                *");
-            Console.WriteLine("* Написать программу из операций сравнений (==, !=, <, >, <=, >=,         *");
-            Console.WriteLine("* последовательность можно чередовать, но использовать один               *");
-            Console.WriteLine("* раз в выражении) и логических операций (|, &, ||, &&, !, ^,             *");
-            Console.WriteLine("* арифметических выражений, которая вернет логическую                     *");
-            Console.WriteLine("* последовательность(массив): (False, False, True, False, True, False),   *");
-            Console.WriteLine("* при a = 654, b = 325, c = 154, d = 333                                  *");
+            Console.WriteLine("* Написать программу на, которая запрашивает целые значения с клавиатуры  *");
+            Console.WriteLine("* и вычисляет находится ли точка с координатами X,Y в заштрихованной      *");
+            Console.WriteLine("* области.                                                                *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Исходные данные:                                                        *");
             Console.WriteLine("***************************************************************************");
-            int a = 654, b = 325, c = 154, d = 333;
-            bool[] res = new bool[6];
-            res = ds.GetLogicOperations(a, b, c, d);
-            Console.WriteLine("A = " + a);
-            Console.WriteLine("B = " + b);
-            Console.WriteLine("C = " + c);
-            Console.WriteLine("D = " + d);
+            int x, y;
+            bool res;
+            Console.WriteLine("Введите значние X: ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите значние Y: ");
+            y = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            for (int i = 0; i < 6; i++)
+            res = ds.CheckDotInShadedArea(x, y);
+            if (res == true)
             {
-                Console.WriteLine(res[i]);
+                Console.WriteLine("Точка находится в заштрихованной области");
             }
-            Console.ReadKey();
+            else
+            {
+                Console.WriteLine("Точка не находится в заштрихованной области");
+            }
         }
     }
 }
