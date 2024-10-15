@@ -9,40 +9,40 @@ namespace Tyuiu.AntonovNS.Sprint2.Task5.V7.Lib
             switch (n)
             {
                 case 1:
-                    return "Январь";
+                    return "январь";
                 break;
                 case 2:
-                    return "Март";
+                    return "март";
                 break;
                 case 3:
-                    return "Март";
+                    return "март";
                 break;
                 case 4:
-                    return "Апрель";
+                    return "апрель";
                 break;
                 case 5:
-                    return "Май";
+                    return "май";
                 break;
                 case 6:
-                    return "Июнь";
+                    return "июнь";
                 break;
                 case 7:
-                    return "Июль";
+                    return "июль";
                 break;
                 case 8:
-                    return "Август";
+                    return "август";
                 break;
                 case 9:
-                    return "Сентябрь";
+                    return "сентябрь";
                 break;
                 case 10:
-                    return "Октябрь";
+                    return "октябрь";
                 break;
                 case 11:
-                    return "Ноябрь";
+                    return "ноябрь";
                 break;
                 case 12:
-                    return "Декабрь";
+                    return "декабрь";
                 break;
                 default:
                     throw new ArgumentException($"Месяц должен быть от 1 до 12. значние {n}");
