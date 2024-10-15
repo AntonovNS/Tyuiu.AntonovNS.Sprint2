@@ -30,7 +30,7 @@ namespace Tyuiu.AntonovNS.Sprint2.Task6.V2
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(ds.CheckDotInShadedArea(x,y));
+            Console.WriteLine(ds.CheckDotInShadedArea(x, y));
         }
     }
 }
