@@ -12,7 +12,7 @@ namespace Tyuiu.AntonovNS.Sprint2.Task5.V7.Lib
                     return "Январь";
                 break;
                 case 2:
-                    return "Февраль";
+                    return "Март";
                 break;
                 case 3:
                     return "Март";
