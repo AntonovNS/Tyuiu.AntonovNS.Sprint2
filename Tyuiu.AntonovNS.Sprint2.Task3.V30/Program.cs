@@ -1,5 +1,5 @@
 ﻿using Tyuiu.AntonovNS.Sprint2.Task3.V30.Lib;
-namespace Tyuiu.AntonovNS.Sprint2.Task3.V300
+namespace Tyuiu.AntonovNS.Sprint2.Task3.V30
 {
     internal class Program
     {
